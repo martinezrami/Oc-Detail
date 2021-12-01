@@ -1,0 +1,37 @@
+// COLOR LOGO PRINCIPAL #e3a439 
+
+
+// COLORES
+$negro: #000000;
+$clrPrincipal:  #E3A439;
+$clrPrincipalClaro: #E8C17F;
+$marron: #36241c;
+$fondoFormularios: #ffffffb4;
+$colorHero: #ffffffc5;
+$fondoCartas: #ffffff52;
+$parrafos: #5f5858;
+$servicios: #dfdfdf;
+$serviciosFondo: #36241ca8;
+$instagram: #dc3170;
+$facebook: #1773ea;
+
+// TAMAÑOS
+$sizeH1: clamp(2.7rem, 4vw, 4rem);
+$sizeH2: clamp(2rem, 4vw, 2.5rem);
+
+// MIXINS 
+
+@mixin box-shadow ($h, $v, $b, $s: 0px , $c: #000000){
+    box-shadow: $h $v $b $s $c;
+}
+
+@mixin flex ($flow: row, $justify: flex-start, $aling: strech) {
+    display: flex;
+    flex-flow: $flow;
+    justify-content: $justify;
+    align-items: $aling;
+}
+
+
+
+

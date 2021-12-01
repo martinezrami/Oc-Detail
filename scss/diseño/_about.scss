@@ -1,0 +1,40 @@
+.nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.2em;
+    padding: 2em 2.5em;
+    h1 {
+        font-size: $sizeH1;
+        text-align: left;
+        
+    }
+    p {
+        text-align: justify;
+    }
+    &__video {
+        width: 100%;
+        border-radius: 0.6em;
+        @include box-shadow(3px, 3px, 15px);
+    }
+    &__info {
+        @include flex (column nowrap, space-evenly);
+        padding-right: 1em;
+    }
+
+    @media (max-width: 1250px) {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            padding: 1em 1.5em;
+            }
+            
+    @media (max-width: 500px) {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 2fr 0.5fr;
+            padding: 1em 1.5em;
+    }
+}
+
+
+

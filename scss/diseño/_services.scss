@@ -1,0 +1,48 @@
+.servicios {
+    display: grid;
+    place-content: center;
+    padding: 1em 2em;
+    h1 {
+        margin-top: 0.5em;
+    }
+    p {
+        font-size: $sizeH2;
+        color: $servicios;
+        font-family: $fontTitle;
+        padding: 0.5em;
+        text-align: center;
+        
+    }
+    &__img {
+        border-radius: 0.3em;
+    }
+    &__cartas {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0em 1.5em;
+        background-color: $serviciosFondo;
+        border-radius: 1em;
+        margin: 3em 1.8em;
+        @include box-shadow(3px, 3px, 10px, 0px, $serviciosFondo);
+        &--reverse {
+            @extend .servicios__cartas;
+            flex-flow: row-reverse nowrap;
+        }
+    }
+
+    @media (max-width: 500px) {
+        p {
+            font-size: 1.5rem;
+        }
+        &__cartas {
+            flex-flow: column nowrap;
+            padding: 0em;
+            margin: 1em;
+            &--reverse{
+                flex-flow: column nowrap;
+            }
+        }
+    }
+}

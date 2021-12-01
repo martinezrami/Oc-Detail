@@ -1,0 +1,84 @@
+.hero {
+    @include flex (row, center, center);
+    background-image: url(../images/principal.jpg) ; 
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__titulo {
+        background-color: $colorHero;
+        text-align: center;
+        width: 50%;
+        border-radius: 0.7em;
+        z-index: 1;
+        padding: 0.8em 1.3em;
+        p {
+            text-align: justify;
+        }
+    }
+
+    @media (max-width:500px) {
+        &__titulo {
+            p {
+                display: none;
+            }
+        }    
+    }
+}
+.muestras {
+    @include flex (column nowrap, space-evenly);
+    margin: 1.5em 1.5em;
+    padding: 2em 0;
+    h2 {
+        text-align: center;
+    }
+    &__cajas {
+        @include flex (row wrap, space-evenly, space-between);
+        padding: 1em;
+        margin: 1.1em 1.5em;
+    }
+    &__subtitle {
+        font-size: 1.5rem;
+    }
+    &__img {
+        width: 350px;
+        height: 250px;
+        border-radius: 1em 1em 0.2em 0.2em;
+    }
+    &__article {
+        @include flex (column nowrap);
+        text-align: center;
+        padding: 10px 15px;
+        margin: 15px;
+        background-color: $fondoCartas;
+        border-radius: 0.7em;
+        @include box-shadow(3px, 3px, 15px);
+            &:hover {
+        transform: scale(1.1);
+        transition: 0.8s;
+        }
+    }
+    @media (max-width: 500px) {
+        &__cajas {
+            padding: 0em;
+            margin: 1em;
+        }
+        &__article {
+            padding: .3em; 
+            margin: 1em;
+        }
+        &__subtitle {
+            font-size: 25px;
+        }   
+        &__img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+
+

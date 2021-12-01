@@ -1,0 +1,48 @@
+h1,
+h2,
+h3 {
+    font-family: $fontTitle;
+}
+
+h1 { 
+    font-size: $sizeH1;
+    text-align: center;
+}
+
+h2 {
+    font-size: $sizeH2;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+p,
+a {
+    font-size: 1rem;
+    font-family: $fontBody;
+    font-weight: 500;
+    color: $parrafos;
+    text-decoration: none;
+}
+
+input,
+select,
+textarea,
+button {
+    font-size: 1rem;
+    font-family: $fontBody;
+    font-weight: 500;
+    color: $parrafos;
+}
+
+span {
+    color: $clrPrincipal;
+    font-weight: 700;
+    text-shadow: 1px 1px 8px $negro;
+}
+
+main {
+    background-color: $clrPrincipalClaro;
+    padding-bottom: 2em;
+}

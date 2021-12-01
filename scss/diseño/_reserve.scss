@@ -1,0 +1,32 @@
+.turnos {
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    @include flex (column wrap, flex-start, center);
+    padding: 2em 1.5em;
+    &__form {
+        background-color: $fondoFormularios;
+        border-radius: 0.7em;
+        @include box-shadow(3px, 3px, 15px);
+        text-transform: uppercase;
+        @include flex (column wrap, center);
+        padding: 2em;
+        margin: 1em;
+        font-weight: 600;   
+        div {
+            margin: 0.7em;
+        }
+    }
+
+    @media (max-width: 500px) {
+        &__form {
+            padding: 1.2em;
+            margin: 0.5em;
+            div {
+                margin: 0.3em;
+            }
+        }
+    }
+
+}

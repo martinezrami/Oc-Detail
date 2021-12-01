@@ -1,0 +1,17 @@
+.footer {
+    background-color: $clrPrincipal;
+    padding: 0.5em 0.8em;
+    @include flex (row nowrap, space-between, baseline);
+
+    &__redes {
+        width: 1.5em;
+        margin: 0.5em;
+    }
+    
+@media (max-width: 400px) {
+        &__redes {
+            width: 1em;
+            margin: 0.2em;
+        }
+    }
+}    

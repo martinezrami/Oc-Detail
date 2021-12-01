@@ -1,0 +1,15 @@
+/* Color Logo #e3a439 */
+
+// RESET
+@import "./reset/reset";
+// TIPOGRAFIA
+@import "./tipografia/fuentes";
+// COLORES
+@import "./variables/variables.scss";
+// ETIQUETAS
+@import "./etiquetas/etiquetas.scss";
+// UTILIDADES
+@import "./utilidades/utilidades";
+// DISEÑO 
+@import "./diseño/header.scss","./diseño/home.scss", "./diseño/footer.scss", "./diseño/services.scss", 
+        "./diseño/contact.scss", "./diseño/about.scss", "./diseño/reserve";

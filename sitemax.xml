@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.google.com/schemas/sitemap/0.84">
+<url>
+<loc>https://www.ocdetail.com/index.html</loc>
+<lastmod>2021-11-17</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1.0</priority>
+</url>
+<url>
+<loc>https://www.ocdetail.com/servicios.html</loc>
+<lastmod>2021-11-17</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://www.ocdetail.com/quienes-somos.html</loc>
+<lastmod>2021-11-17</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://www.ocdetail.com/contacto.html</loc>
+<lastmod>2021-11-17</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://www.ocdetail.com/reservas.html</loc>
+<lastmod>2021-11-17</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1.0</priority>
+</url>
+</urlset>
